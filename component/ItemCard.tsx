@@ -16,6 +16,7 @@ export const ItemCard = ({ itemIndex, onChange, isChecked }: ItemCardProps) => {
       withBorder
       key={itemIndex}
       onClick={() => onChange(!isChecked, itemIndex)}
+      data-testid="card-item"
     >
       <Group position="apart" mt="md" mb="xs">
         <Text weight={500}>Item number {itemIndex}</Text>
